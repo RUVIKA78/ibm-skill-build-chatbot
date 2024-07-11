@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+</head>
+<body class="bg-gradient-to-r from-white to-blue-300">
+
+<div class="flex flex-col items-center justify-center min-h-screen">
+    <h1 class="font-bold text-4xl text-blue-500 mb-4">Welcome To BookIshWorm</h1>
+    <h3 class="font-bold text-2xl text-blue-500 mb-4">Explore Books on Spirituality, Motivation, Stories, Mysteries, and much more!</h3>
+    <div class="w-[500px]">
+        <img class="w-full h-full object-cover" src="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?ga=GA1.1.677277887.1717063233&semt=ais_hybrid" alt="Books">
+    </div>
+</div>
+
+<script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "e6c23f1a-3025-4fda-a208-c8deccb48d6e", // The ID of this integration.
+      region: "au-syd", // The region your integration is hosted in.
+      serviceInstanceID: "2c0fbffb-628e-4a96-b104-0a761afb06e8", // The ID of your service instance.
+      onLoad: async (instance) => { await instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+</body>
+</html>
